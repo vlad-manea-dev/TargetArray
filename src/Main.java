@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
   }
-  public static int[] numStat(int[] nums){
+
+  public static int[] numStat(int[] nums) {
     Scanner sc = new Scanner(System.in);
     System.out.println("How many numbers do you want: ");
     int numberCount = sc.nextInt();
@@ -12,20 +13,21 @@ public class Main {
     int targetValue = sc.nextInt();
     System.out.println("Enter the distance: ");
     int distance = sc.nextInt();
+    int res = 0;
     for (int i = 0; i < numberCount; i++) {
       System.out.println("Enter element: ");
       int element = sc.nextInt();
       userNumbers[i] = element;
-
-      int difference = userInput - targetValue;
+      int difference = element - targetValue;
       int absDifference = Math.abs(difference);
-    }
-    for (int totalCount = 0; totalCount <= 6; totalCount++) {
-      if (int absDifference <= distance) {
-        totalCount++;
+      if (absDifference <= distance) {
+        res++;
       }
-      return
     }
+    return res;
+    sc.close();
+  }
+}
 
 //    System.out.println("Enter the number of elements: ");
 //    int numElements = sc.nextInt();
@@ -42,10 +44,3 @@ public class Main {
 //    System.out.println("Enter element 6: ");
 //    int elementSix = sc.nextInt();
 
-
-
-
-
-
-  }
-}
