@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-  }
-
-  public static int[] numStat(int[] nums) {
     Scanner sc = new Scanner(System.in);
     System.out.println("How many numbers do you want: ");
     int numberCount = sc.nextInt();
