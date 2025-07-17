@@ -5,15 +5,19 @@ public class Main {
   }
   public static int[] numStat(int[] nums){
     Scanner sc = new Scanner(System.in);
-    System.out.println("Please enter 6 numbers, each between 1 and 100: ");
-    int[] userNumbers = new int[6];
+    System.out.println("How many numbers do you want: ");
+    int numberCount = sc.nextInt();
+    int[] userNumbers = new int[numberCount];
     System.out.println("Enter the target value: ");
     int targetValue = sc.nextInt();
     System.out.println("Enter the distance: ");
     int distance = sc.nextInt();
-    for (int i = 0; i < userNumbers.length; i++) {
-      int element = userNumbers[i];
-      int difference = element - targetValue;
+    for (int i = 0; i < numberCount; i++) {
+      System.out.println("Enter element: ");
+      int element = sc.nextInt();
+      userNumbers[i] = element;
+
+      int difference = userInput - targetValue;
       int absDifference = Math.abs(difference);
     }
     for (int totalCount = 0; totalCount <= 6; totalCount++) {
