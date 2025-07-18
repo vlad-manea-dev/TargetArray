@@ -19,9 +19,9 @@ public class Main {
       int absDifference = Math.abs(difference);
       if (absDifference <= distance) {
         res++;
+        System.out.println(res);
       }
     }
-    return res;
     sc.close();
   }
 }
